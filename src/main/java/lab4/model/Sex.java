@@ -1,2 +1,5 @@
-package lab4.model;public enum Sex {
+package lab4.model;
+
+public enum Sex {
+    MALE, FEMALE, OTHER
 }
