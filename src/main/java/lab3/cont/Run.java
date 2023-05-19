@@ -16,14 +16,15 @@ import org.example.mod.*;
         Creator<Department> departmentCreator = new DepartmentCreator();
         Creator<Group> groupCreator = new GroupCreator();
 
-        Human dean = new Human("Jane", "Smith", "", Sex.FEMALE);
+        Human head = new Human("Mark", "Johnson", "Olegovich", Sex.MALE);
+        Department department = departmentCreator.create("Software Engineering", head);
+     
+        Human dean = new Human("Jane", "Smith", "Dmytrovich", Sex.FEMALE);
         Faculty faculty = facultyCreator.create("Computer Science", dean);
 
-        Human head = new Human("Mark", "Johnson", "", Sex.MALE);
-        Department department = departmentCreator.create("Software Engineering", head);
 
-        Human groupLeader = new Human("Sarah", "Davis", "", Sex.FEMALE);
-        Group group = groupCreator.create("SE-101", groupLeader);
+        Human groupLeader = new Human("Sarah", "Davis", "Nataliyovych", Sex.FEMALE);
+        Group group = groupCreator.create("121-20-1", groupLeader);
 
         System.out.println("University: " + university.getName());
         System.out.println("Rector: " + university.getRector().getFirstName() + " " + university.getRector().getLastName());
