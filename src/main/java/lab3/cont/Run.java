@@ -1,6 +1,6 @@
-package org.example.cont;
-import org.example.mod.*;
- public class Run {
+package lab3.cont;
+import lab3.mod.*;
+public class Run {
     public static void main(String[] args) {
         Run run = new Run();
         run.createTypicalUniversity();
@@ -18,7 +18,7 @@ import org.example.mod.*;
 
         Human head = new Human("Mark", "Johnson", "Olegovich", Sex.MALE);
         Department department = departmentCreator.create("Software Engineering", head);
-     
+
         Human dean = new Human("Jane", "Smith", "Dmytrovich", Sex.FEMALE);
         Faculty faculty = facultyCreator.create("Computer Science", dean);
 
