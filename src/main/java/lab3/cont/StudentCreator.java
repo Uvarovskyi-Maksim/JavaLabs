@@ -1,5 +1,5 @@
-package org.example.cont;
-import org.example.mod.*;
+package lab3.cont;
+import lab3.mod.*;
 public class StudentCreator implements Creator<Student> {
     @Override
     public Student create(String name, Human header) {
