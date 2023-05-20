@@ -1,4 +1,4 @@
-package org.example.mod;
+package lab3.mod;
 
 public class University {
     private String name;
