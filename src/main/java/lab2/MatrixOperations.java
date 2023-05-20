@@ -110,8 +110,8 @@ public class MatrixOperations {
             }
         }
 
-        System.out.println(min);
-        System.out.println(max);
+        System.out.println("Мінімальне значення: " + min);
+        System.out.println("Максимальне значення: " + max);
     }
 }
 
